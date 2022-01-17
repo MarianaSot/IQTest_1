@@ -20,6 +20,7 @@ class MainActivity4 : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         val random1= (1..10).random()
+        
         val random2= (1..10).random()
         findViewById<TextView>(R.id.textView10).text = "${random1}"
         findViewById<TextView>(R.id.textView11).text = "${random1+random2}"
