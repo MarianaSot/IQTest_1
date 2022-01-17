@@ -1,0 +1,38 @@
+{
+	"test_types": [{
+		"mensa": {
+			"age_type": "18-50",
+			"questions": [{
+				"question_id": 0,
+				"question_image": "path_to_file/0.png",
+				"answer_select": 1,
+				"answer_correct": 2,
+				"answer_images": [{
+						"answer_id": 0,
+						"answer_image": "path_to_file/0 0.png"
+					},
+					{
+						"answer_id": 1,
+						"answer_image": "path_to_file/0 1.png"
+					},
+					{
+						"answer_id": 2,
+						"answer_image": "path_to_file/0 2.png"
+					},
+					{
+						"answer_id": 3,
+						"answer_image": "path_to_file/0 3.png"
+					},
+					{
+						"answer_id": 4,
+						"answer_image": "path_to_file/0 4.png"
+					},
+					{
+						"answer_id": 5,
+						"answer_image": "path_to_file/0 5.png"
+					}
+				]
+			}]
+		}
+	}]
+}
