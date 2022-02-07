@@ -6,34 +6,30 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 
 
 class Draw2D(context: Context?) : View(context) {
     private val mPaint = Paint()
-    private val mTextBoundRect = Rect()
+    private val superColor = Paint()
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        val textWidth: Float
-        val textHeight: Float
-        //val text = "A"
+
         val width: Float
-        val height: Float
+
         val centerX: Float
-        val centerY: Float
-        val radius: Float
+
         width = getWidth().toFloat()
-        height = getHeight().toFloat()
+
         centerX = width / 2
-        centerY = height / 2
-        radius = if (width > height) {
-            height / 4
-        } else {
-            width / 4
-        }
+
 
         // стиль Заливка
         mPaint.style = Paint.Style.FILL
+        superColor.style = Paint.Style.FILL
+        superColor.color=Color.WHITE
 
         // закрашиваем холст белым цветом
         mPaint.color = Color.WHITE
@@ -57,12 +53,16 @@ class Draw2D(context: Context?) : View(context) {
         val myRect2 = Rect(205+250, 550, 375+250, 720)
         val myRect3 = Rect(205+500, 550, 375+500, 720)
 
+        val superRect = Rect(50,180,1010,1100)
+
         val greenPaint = Paint()
         greenPaint.color = Color.rgb(50,50,50)
         greenPaint.style = Paint.Style.FILL
         canvas.drawRect(myRect1, greenPaint)
         canvas.drawRect(myRect2, greenPaint)
         canvas.drawRect(myRect3, greenPaint)
+
+        //canvas.drawRect(superRect, superColor)
 
         mPaint.setStrokeWidth(10F);
         //рисуем треугольники
@@ -80,6 +80,43 @@ class Draw2D(context: Context?) : View(context) {
 
         mPaint.setTextSize(90.0f);
         canvas.drawText("?", centerX+230F, 895F, mPaint)
+
+        val random11= (1..5).random()
+        val random21= (1..3).random()
+
+        if (random11==1) {
+
+
+            //findViewById<Button>(R.id.button1).setOnClickListener {
+            //    startActivity(intent1)
+            //}
+            //findViewById<Button>(R.id.button2).setOnClickListener {
+            //    startActivity(intent1)
+            //}
+            //findViewById<Button>(R.id.button3).setOnClickListener {
+            //    startActivity(intent1)
+            //}
+        }
+        else if (random11==2) {
+
+
+
+        }
+        else if (random11==3) {
+
+
+
+        }
+        else if (random11==4) {
+
+
+
+        }
+        else if (random11==5) {
+
+
+
+        }
 
         // Рисуем текст
         //mPaint.color = Color.BLUE
