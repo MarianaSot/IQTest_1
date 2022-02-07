@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IQTest">
         <activity
-            android:name=".MainActivity6"
-            android:exported="false" />
+            android:name=".Draw2"
+             />
+        <activity
+            android:name="com.example.iqtest.Matrix"
+             />
         <activity
             android:name=".MainActivity5"
             android:exported="false" />
@@ -20,9 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

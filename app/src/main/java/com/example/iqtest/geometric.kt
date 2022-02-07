@@ -7,7 +7,7 @@ import android.widget.TextView
 class MainActivity5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main5)
+        setContentView(R.layout.geometric)
     }
     override fun onStart() {
         super.onStart()

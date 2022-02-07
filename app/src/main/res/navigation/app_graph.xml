@@ -9,7 +9,7 @@
         android:id="@+id/mainActivity2"
         android:name="com.example.iqtest.MainActivity2"
         android:label="activity_main2"
-        tools:layout="@layout/activity_main2" >
+        tools:layout="@layout/hello" >
         <action
             android:id="@+id/action_mainActivity2_to_mainActivity"
             app:destination="@id/mainActivity" />
@@ -19,5 +19,5 @@
         android:id="@+id/mainActivity"
         android:name="com.example.iqtest.MainActivity"
         android:label="activity_main"
-        tools:layout="@layout/matrica" />
+        tools:layout="@layout/matrix" />
 </navigation>

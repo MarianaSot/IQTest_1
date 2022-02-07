@@ -8,10 +8,10 @@ import kotlinx.serialization.*
 import kotlinx.serialization.json.*
 import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class Matrix : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.`matrica.xml`)
+        setContentView(R.layout.matrix)
 
     }
 
